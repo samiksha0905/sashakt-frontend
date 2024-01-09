@@ -1,0 +1,259 @@
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (max-width: 768px) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.carousel-caption {
+  text-align: center;
+}
+
+/* Input groups */
+.input-group {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.input-group input {
+  width: 100%;
+}
+
+/*
+.mystyle{
+  width: 20%;
+   position: absolute;
+    bottom: 82px; 
+    left: 50%;
+     transform:
+   translateX(-50%); 
+   z-index: 1
+}
+*/
+/* Make .mystyle responsive */
+.mystyle {
+  width: 90%; /* Adjust the width as needed */
+  max-width: 300px; /* Set a maximum width if necessary */
+  position: absolute;
+  bottom: 5%; /* Adjust the distance from the bottom as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.cardstyling{
+        .card{
+            width : 90%;
+        }
+
+        .card img {
+            width: 100%;
+            height: 250px; /* Adjust the height as needed */
+            object-fit: cover; /* Maintain image aspect ratio */
+        }
+
+        .card-body {
+            text-align: center;
+        }
+      }
+      
+      * { 
+        margin: 0; 
+        padding: 0; 
+        box-sizing: border-box; 
+      } 
+      .gameboardbody {
+        background-color:  rgb(21, 56, 66); 
+        /* Your desired background color */
+        height:100vh
+      
+      }
+
+      /*
+      .App { 
+        height: 100vh; 
+        width: 100vw; 
+        font-family: cursive; 
+        background-color: rgb(21, 56, 66); 
+      } 
+      */
+      
+      /* CSS for GameBoard component */
+      .container { 
+        display: flex; 
+        flex-direction: column; 
+      } 
+      
+      .header { 
+        display: flex; 
+        flex-direction: column; 
+        padding: 10px; 
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+      } 
+      
+      h1 { 
+        
+        font-size: 2.5rem; 
+        color: rgb(255, 255, 255); 
+        margin-bottom: 0.5rem;
+      
+      } 
+      
+      .button { 
+        display: flex; 
+        align-items: center; 
+        justify-content: center; 
+        padding: 0.5rem 0.8rem; 
+        font-family: cursive; 
+        width: 200px; 
+        /*width:100%; */
+        font-size: 1.2rem; 
+        font-weight: bolder; 
+        border-radius: 0.7rem; 
+        border-style: none; 
+        background-color: red; 
+        color: white; 
+        margin-top: 4px; 
+       /* margin-left: 55%; */
+       margin-left: 42%; 
+      } 
+      
+      .button:hover { 
+        border: 2px solid black; 
+        cursor: pointer; 
+      } 
+      
+      
+      /*
+      .board { 
+        display: grid; 
+        margin: auto; 
+        margin-top: 3rem; 
+        grid-template-columns: repeat(4, 9rem); 
+        place-items: center; 
+        row-gap: 2rem; 
+      } 
+      */
+      .board {
+        display: grid;
+        margin: auto;
+        margin-top: 3rem;
+        grid-template-columns: repeat(4, 10rem); /* Increase card width */
+        place-items: center;
+        row-gap: 3rem; /* Increase gap between rows */
+      }
+      
+      .comments { 
+        padding: 0.25rem 1rem; 
+        background-color: white; 
+        margin: auto; 
+        margin-top: 40px; 
+        text-align: center; 
+        border-radius: 2rem; 
+      } 
+      
+      
+      .face { 
+        height: 6rem; 
+        width: 6rem;
+        transition: transform ease-in 0.25s;
+        position: absolute; 
+      } 
+      
+      .back { 
+        height: 6rem; 
+        width: 6rem; 
+        background-color: rgb(253, 218, 175); 
+        color: rgb(61, 21, 21); 
+        border: 1px solid black; 
+        border-radius: 50%; 
+      } 
+      
+      .item .face { 
+        position: absolute; 
+        transform: rotateY(90deg); 
+        transition: all ease-in 0.25s; 
+        
+      
+      } 
+      
+      .toggled .face { 
+        transform: rotateY(0deg); 
+        transition-delay: 0.25s; 
+      } 
+      
+      .item .back { 
+        transition: all ease-in 0.25s; 
+        transition-delay: 0.25s; 
+      } 
+      
+      .toggled .back { 
+        transform: rotateY(90deg); 
+        transition-delay: 0s; 
+      }
+      
+      
+      
+      .timer {
+        font-size: 1.2rem;
+        color: rgb(247, 247, 247);
+        margin-top: 0.5rem;
+      }
+      
+      
+      .popup-overlay {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background: rgba(0, 0, 0, 0.5); /* semi-transparent overlay */
+        width: 700px; 
+        height: 300px;/* Adjust the width as needed */
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+      }
+      
+      .popup-content {
+        background: #fff;
+        height: 100%; /* Ensure the content takes full height */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      /* ChildRightsInfo.css */
+     

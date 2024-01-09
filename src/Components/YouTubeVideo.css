@@ -1,0 +1,29 @@
+/*YouTubeVideo.css*/
+.fullscreen-video {
+  background-image: url("blob:https://web.whatsapp.com/6fbb0bc4-d325-4201-a7cb-bd22dc868995");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
+.youtube-container {
+  width: 100%;
+  height: 100vh;
+  }
+/* Youtubepage.css */
+.ytbackground-image {
+  background-image: url('blob:https://web.whatsapp.com/5c15e6ea-39ed-4932-be1c-4197830efba6'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh; /* Set the minimum height to cover the entire viewport */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card-body{
+  background-color: rgb(51, 175, 175);
+}
