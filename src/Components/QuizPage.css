@@ -1,51 +1,51 @@
 .quiz-container1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
-    background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV93te2bR9Y45H56G9Wz4CzxyH7j42QSTD3w&usqp=CAU');
-  }
-  
-  .question-section1 {
-    text-align: center;
-    
-  }
-  
-  .answer-section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .quiz-button {
-  margin-top: 10px; /* Decrease top margin */
-  padding: 10px; /* Decrease button size */
-  cursor: pointer;
-  width: 100px;
-  height: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV93te2bR9Y45H56G9Wz4CzxyH7j42QSTD3w&usqp=CAU');
 }
+
+.question-section1 {
+  text-align: center;
   
-  .correct-answer {
-    background-color: #4caf50; /* Green for correct answer */
-    color: #fff;
-  }
+}
+
+.answer-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.quiz-button {
+margin-top: 10px; /* Decrease top margin */
+padding: 10px; /* Decrease button size */
+cursor: pointer;
+width: 100px;
+height: 30px;
+}
+
+.correct-answer {
+  background-color: #4caf50; /* Green for correct answer */
+  color: #fff;
+}
+
+.wrong-answer {
+  background-color: #f44336; /* Red for wrong answer */
+  color: #fff;
+}
+
+.score-section-box {
+  background-color: #93f279;
+  padding: 50px;
+  border-radius: 20px;
+  text-align: center;
+  margin-top: 200px;
   
-  .wrong-answer {
-    background-color: #f44336; /* Red for wrong answer */
-    color: #fff;
-  }
-  
-  .score-section-box {
-    background-color: #93f279;
-    padding: 50px;
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 200px;
-    
-  }
-  
-  .score-section {
-    display: inline;
-  }
+}
+
+.score-section {
+  display: inline;
+}
